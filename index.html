@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="lib/jquery-1.6.4.js"></script>
+        <script src="lib/jquery.mobile-1.1.0.js"></script>
+        <link href="src/css/jquery.mobile.structure-1.1.0.css" rel="stylesheet">
+        <link href="src/css/jquery.mobile.theme-1.1.0.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div data-role="page" id="page1" data-theme="e">
+            <div data-role="header" id="principal">
+                <h1>CBTis 254 Palmar de Bravo</h1>
+            </div>
+            <div data-role="content">
+                <div data-role="collapsible">
+                    <h1>Desarrolla Aplicaciones Web</h1>
+                    <div data-role="controlgroup">
+                        <a data-role="button" href="#page2 ">Paginas estaticas</a>
+                        <a data-role="button" href="#page3 ">Paginas Dinamicas</a>
+                        <a data-role="button">Button</a>
+                    </div>
+                </div>
+            </div>
+            <div data-role="footer">
+                <h1>Footer</h1>
+                <ol data-role="listview" data-inset="true"></ol>
+            </div>
+        </div>
+        <div data-role="page" id="page2">
+            <div data-role="header">
+                <h1>PAGINAS ESTATICAS</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" class="ui-btn-active" href="#page1 " data-icon="arrow-l "
+                            data-iconshadow="false" data-theme="d">Inicio</a>
+                        </li>
+                        <li>
+                            <a data-role="button" class="ui-btn-active" href="#page3 " data-icon="arrow-r ">Siguiente </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <div class="div-widget">
+                            <span>Los sitios Web estáticos son aquellos sitios enfocados principalmente a mostrar
+                                una información permanente, donde el navegante se limita a obtener dicha información,
+                                sin que pueda interactuar con la página Web visitada, las Web estáticas están construidas
+                                principalmente con hipervínculos o enlaces (links) entre las páginas Web que conforman
+                                el sitio, este tipo de Web son incapaces de soportar aplicaciones Web como gestores
+                                de bases de datos, foros, consultas on line, e-mails inteligentes...</span>
+                        </div>
+                    </div>
+                    <div class="ui-block-b">
+                        <img src="images/dinamica.jpg" width="100" height="200">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page3">
+            <div data-role="header">
+                <h1>PAGINAS DINAMICAS</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" class="ui-btn-active" href="#page1 " data-transition="slidedown"
+                            data-icon="arrow-l " data-theme="d">Inicio</a>
+                        </li>
+                        <li>
+                            <a data-role="button" class="ui-btn-active" href="#page1 " data-icon="arrow-l ">Anterior </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="content">
+                <h6>Las páginas dinámicas son páginas HTML generadas a partir de lenguajes de programación
+                    (scripts) que son ejecutados en el propio servidor web. A diferencia de otros scripts,
+                    como el JavaScript, que se ejecutan en el propio navegador del usuario, los 'Server
+                    Side' scripts generan un código HTML desde el propio servidor web. Este código HTML
+                    puede ser modificado -por ejemplo- en función de una petición realizada por el usuario
+                    en una Base de Datos. Dependiendo de los resultados de la consulta en la Base de
+                    Datos, se generará un código HTML u otro, mostrando diferentes contenidos.</h6>
+                <div
+                class="div-widget">
+                    <span>Checar el siguiente enlace: http://es.wikipedia.org/wiki/P%C3%A1gina_web</span>
+            </div>
+            <div class="div-widget">
+                <a data-role="button" href="http://www.google.com.mx   ">Button</a>
+            </div>
+        </div>
+        </div>
+    </body>
+
+</html>
